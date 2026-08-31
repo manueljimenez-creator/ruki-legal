@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- La LSSI (art. 10.1) obliga a publicar el domicilio del responsable, y siendo
+     autónomo es su casa. Accesible tiene que ser; INDEXABLE no lo exige nadie.
+     Sin esto, la calle de una persona física queda buscable en Google junto a su
+     nombre y su NIF. Apple, Google, Strava y cualquier usuario piden la URL
+     directamente, así que no les afecta. -->
+<meta name="robots" content="noindex, nofollow">
+<title>Ruki · Legal</title>
+<link rel="alternate" hreflang="en" href="index-en.html">
+<style>
+  :root {
+    --ground: #ffffff; --panel: #f5f7f4; --ink: #14170f; --ink-2: #4d544a;
+    --ink-3: #79806f; --line: #e2e6dd; --brand: #1db954;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ground: #0f120e; --panel: #171a15; --ink: #eef1ea; --ink-2: #b4bcb0;
+      --ink-3: #858d81; --line: #262b23; --brand: #53e076;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--ground); color: var(--ink); font-size: 17px; line-height: 1.65;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 20px 100px; }
+  header { border-bottom: 1px solid var(--line); padding-bottom: 24px; margin-bottom: 36px; }
+  .marca { display: flex; align-items: center; gap: 10px; font-weight: 700; letter-spacing: -.01em; }
+  .marca span { color: var(--brand); font-size: 1.5rem; }
+  h1 { font-size: 2rem; line-height: 1.15; margin: 18px 0 8px; letter-spacing: -.02em; }
+  .fecha { color: var(--ink-3); font-size: .9rem; margin: 0; }
+  h2 { font-size: 1.2rem; margin: 40px 0 12px; letter-spacing: -.01em; }
+  h3 { font-size: 1rem; margin: 26px 0 8px; }
+  p, li { color: var(--ink-2); }
+  p { margin: 0 0 14px; }
+  strong { color: var(--ink); }
+  ul { padding-left: 1.2em; margin: 0 0 14px; }
+  li { margin-bottom: 6px; }
+  .tabla { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; margin: 0 0 18px; }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; min-width: 460px; }
+  th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--line); color: var(--ink-2); vertical-align: top; }
+  th { background: var(--panel); color: var(--ink-3); font-size: .78rem; text-transform: uppercase; letter-spacing: .08em; font-weight: 600; }
+  tr:last-child td { border-bottom: none; }
+  .destacado { background: var(--panel); border-left: 3px solid var(--brand); border-radius: 0 10px 10px 0; padding: 16px 18px; margin: 0 0 18px; }
+  .destacado p:last-child { margin-bottom: 0; }
+  a { color: var(--brand); }
+  footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--ink-3); font-size: .88rem; }
+  footer p { margin: 0 0 6px; color: var(--ink-3); }
+  footer p:last-child { margin-bottom: 0; }
+  footer .pie-id { line-height: 1.6; }
+  footer .pie-id strong { color: var(--ink-2); }
+  .aviso-contacto { margin-top: 28px; color: var(--ink-2); font-size: .95rem; }
+  /* Navegación: pegada arriba para que se llegue a la otra página desde
+     cualquier punto del documento — son textos largos y sin esto había que
+     volver al principio a mano. */
+  nav.top {
+    position: sticky; top: 0; z-index: 10; background: var(--ground);
+    border-bottom: 1px solid var(--line);
+  }
+  nav.top .interior {
+    max-width: 720px; margin: 0 auto; padding: 12px 20px;
+    display: flex; align-items: center; gap: 18px; flex-wrap: wrap;
+  }
+  nav.top a { color: var(--ink-2); text-decoration: none; font-size: .93rem; font-weight: 500; }
+  nav.top a:hover, nav.top a:focus-visible { color: var(--brand); }
+  nav.top a[aria-current="page"] { color: var(--ink); font-weight: 700; }
+  nav.top .logo { font-weight: 700; color: var(--ink); }
+  nav.top .logo b { color: var(--brand); }
+  /* El cambio de idioma va a la derecha del todo y con recuadro: es una acción,
+     no un enlace más de la lista. */
+  nav.top .idioma {
+    margin-left: auto; border: 1px solid var(--line); border-radius: 999px;
+    padding: 4px 12px; font-size: .85rem;
+  }
+  nav.top .idioma:hover { border-color: var(--brand); }
+  @media (max-width: 420px) {
+    nav.top .interior { gap: 12px; }
+    nav.top .logo { display: none; }
+  }
+
+  .portada { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; }
+  .portada .r { font-size: 2.6rem; font-weight: 800; color: var(--brand); line-height: 1;
+    letter-spacing: -.04em; }
+  .portada .nombre { font-size: 1.6rem; font-weight: 700; letter-spacing: -.02em; }
+  ul.indice { list-style: none; padding: 0; margin: 28px 0 0; display: grid; gap: 12px; }
+  ul.indice li a { display: block; padding: 18px 20px; border: 1px solid var(--line);
+    border-radius: 12px; background: var(--panel); color: var(--ink); text-decoration: none; }
+  ul.indice li a:hover, ul.indice li a:focus-visible { border-color: var(--brand); }
+  ul.indice .t { display: block; font-weight: 650; margin-bottom: 4px; }
+  ul.indice .d { display: block; color: var(--ink-2); font-size: .93rem; line-height: 1.5; }
+</style>
+</head>
+<body>
+<nav class="top"><div class="interior">
+  <a class="logo" href="index.html"><b>R</b> Ruki</a>
+  <a href="index.html" aria-current="page">Inicio</a>
+  <a href="privacidad.html">Privacidad</a>
+  <a href="condiciones.html">Condiciones</a>
+  <a class="idioma" href="index-en.html" hreflang="en">English</a>
+</div></nav>
+<main>
+  <div class="portada"><span class="r">R</span><span class="nombre">Ruki</span></div>
+  <h1>Información legal</h1>
+  <p>Ruki es una app de entrenamiento de running con un entrenador basado en inteligencia artificial. Aquí están los dos documentos que rigen su uso.</p>
+  <ul class="indice"><li><a href="privacidad.html"><span class="t">Política de privacidad</span><span class="d">Qué datos tratamos, para qué, con quién se comparten y cómo los borras.</span></a></li><li><a href="condiciones.html"><span class="t">Condiciones de uso</span><span class="d">Las reglas del servicio, y el aviso de que Ruki no sustituye al consejo médico.</span></a></li></ul>
+  <p class="aviso-contacto">¿Alguna duda, o quieres avisar de un contenido? Escribe al correo de abajo y se responde en 24 horas.</p>
+  <footer><p class="pie-id"><strong>Manuel Jiménez Carmona</strong> · NIF 70422792N · Tres Cantos, Madrid, España<br>Contacto: <a href="mailto:manolojc02@gmail.com">manolojc02@gmail.com</a></p></footer>
+</main>
+</body>
+</html>
