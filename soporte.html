@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- La LSSI (art. 10.1) obliga a publicar el domicilio del responsable, y siendo
+     autónomo es su casa. Accesible tiene que ser; INDEXABLE no lo exige nadie.
+     Sin esto, la calle de una persona física queda buscable en Google junto a su
+     nombre y su NIF. Apple, Google, Strava y cualquier usuario piden la URL
+     directamente, así que no les afecta. -->
+<meta name="robots" content="noindex, nofollow">
+<title>Soporte · Ruki</title>
+<meta name="description" content="Cómo contactar con Ruki, qué datos de Strava usamos y cómo desconectar o borrar tu cuenta.">
+<link rel="alternate" hreflang="en" href="support.html">
+<style>
+  :root {
+    --ground: #ffffff; --panel: #f5f7f4; --ink: #14170f; --ink-2: #4d544a;
+    --ink-3: #79806f; --line: #e2e6dd; --brand: #1db954;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ground: #0f120e; --panel: #171a15; --ink: #eef1ea; --ink-2: #b4bcb0;
+      --ink-3: #858d81; --line: #262b23; --brand: #53e076;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--ground); color: var(--ink); font-size: 17px; line-height: 1.65;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 20px 100px; }
+  header { border-bottom: 1px solid var(--line); padding-bottom: 24px; margin-bottom: 36px; }
+  .marca { display: flex; align-items: center; gap: 10px; font-weight: 700; letter-spacing: -.01em; }
+  .marca span { color: var(--brand); font-size: 1.5rem; }
+  h1 { font-size: 2rem; line-height: 1.15; margin: 18px 0 8px; letter-spacing: -.02em; }
+  .fecha { color: var(--ink-3); font-size: .9rem; margin: 0; }
+  h2 { font-size: 1.2rem; margin: 40px 0 12px; letter-spacing: -.01em; }
+  h3 { font-size: 1rem; margin: 26px 0 8px; }
+  p, li { color: var(--ink-2); }
+  p { margin: 0 0 14px; }
+  strong { color: var(--ink); }
+  ul { padding-left: 1.2em; margin: 0 0 14px; }
+  li { margin-bottom: 6px; }
+  .tabla { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; margin: 0 0 18px; }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; min-width: 460px; }
+  th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--line); color: var(--ink-2); vertical-align: top; }
+  th { background: var(--panel); color: var(--ink-3); font-size: .78rem; text-transform: uppercase; letter-spacing: .08em; font-weight: 600; }
+  tr:last-child td { border-bottom: none; }
+  .destacado { background: var(--panel); border-left: 3px solid var(--brand); border-radius: 0 10px 10px 0; padding: 16px 18px; margin: 0 0 18px; }
+  .destacado p:last-child { margin-bottom: 0; }
+  a { color: var(--brand); }
+  footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--ink-3); font-size: .88rem; }
+  footer p { margin: 0 0 6px; color: var(--ink-3); }
+  footer p:last-child { margin-bottom: 0; }
+  footer .pie-id { line-height: 1.6; }
+  footer .pie-id strong { color: var(--ink-2); }
+  .aviso-contacto { margin-top: 28px; color: var(--ink-2); font-size: .95rem; }
+  /* Navegación: pegada arriba para que se llegue a la otra página desde
+     cualquier punto del documento — son textos largos y sin esto había que
+     volver al principio a mano. */
+  nav.top {
+    position: sticky; top: 0; z-index: 10; background: var(--ground);
+    border-bottom: 1px solid var(--line);
+  }
+  nav.top .interior {
+    max-width: 720px; margin: 0 auto; padding: 12px 20px;
+    display: flex; align-items: center; gap: 18px; flex-wrap: wrap;
+  }
+  nav.top a { color: var(--ink-2); text-decoration: none; font-size: .93rem; font-weight: 500; }
+  nav.top a:hover, nav.top a:focus-visible { color: var(--brand); }
+  nav.top a[aria-current="page"] { color: var(--ink); font-weight: 700; }
+  nav.top .logo { font-weight: 700; color: var(--ink); }
+  nav.top .logo b { color: var(--brand); }
+  /* El cambio de idioma va a la derecha del todo y con recuadro: es una acción,
+     no un enlace más de la lista. */
+  nav.top .idioma {
+    margin-left: auto; border: 1px solid var(--line); border-radius: 999px;
+    padding: 4px 12px; font-size: .85rem;
+  }
+  nav.top .idioma:hover { border-color: var(--brand); }
+  @media (max-width: 420px) {
+    nav.top .interior { gap: 12px; }
+    nav.top .logo { display: none; }
+  }
+</style>
+</head>
+<body>
+<nav class="top"><div class="interior">
+  <a class="logo" href="index.html"><b>R</b> Ruki</a>
+  <a href="index.html">Inicio</a>
+  <a href="privacidad.html">Privacidad</a>
+  <a href="condiciones.html" aria-current="page">Condiciones</a>
+  <a class="idioma" href="terms.html" hreflang="en">English</a>
+</div></nav>
+<main>
+
+<header>
+  <h1>Soporte</h1>
+  <p class="fecha"></p>
+</header>
+
+<p>Ruki es una app de entrenamiento de running con un coach que te habla por chat. Si algo no va, o quieres que borremos tus datos, aquí está todo.</p>
+<h2>Escríbenos</h2>
+<h3><a href="mailto:manolojc02@gmail.com">manolojc02@gmail.com</a></h3>
+<p>Contestamos en 2-3 días laborables. Cuéntanos qué esperabas que pasara y qué pasó, y si puedes manda una captura: con eso se resuelve casi todo a la primera.</p>
+<p>Si es algo del entrenamiento —una sesión que no cuadra, un ritmo que te parece raro, una semana que quieres mover—, <strong>díselo al coach en el chat de la app</strong>. Está para eso y te contesta al momento.</p>
+<h2>Tu conexión con Strava</h2>
+<p><strong>Qué importamos.</strong> Al conectar Strava traemos tus actividades: fecha, tipo de deporte, nombre, distancia, tiempo, ritmo, frecuencia cardiaca media y máxima, cadencia, desnivel, parciales por kilómetro y vueltas. La primera vez traemos unos doce meses de historial; después, cada actividad nueva llega sola.</p>
+<p><strong>Qué NO importamos.</strong> El recorrido. Strava nos manda el mapa de la ruta y los puntos de inicio y fin, y lo descartamos antes de guardar nada: no sabemos por dónde corres ni de dónde sales.</p>
+<p><strong>Quién lo ve.</strong> Solo tú. Tu perfil público —el que ven otros usuarios de Ruki— enseña tu nombre, tu ciudad, tu bio, tu objetivo, tu club y las marcas que tú escribas. Nunca kilómetros, ritmos, pulso ni ningún resumen o gráfica calculada a partir de ellos.</p>
+<p><strong>Cómo desconectar.</strong> Ajustes → Conexiones → Desconectar Strava. Dejamos de importar en ese momento. También puedes revocar el permiso desde <a href="https://www.strava.com/settings/apps">tus ajustes de Strava</a>.</p>
+<h2>Borrar tu cuenta</h2>
+<p>Ajustes → Zona peligrosa → Borrar cuenta. Se borra todo: tu perfil, tus planes, tus conversaciones con el coach y las actividades importadas. Es inmediato y no se puede deshacer.</p>
+<h2>Lo que Ruki no es</h2>
+<p>Ruki no es un médico y no sustituye a uno. Si tienes una lesión, un dolor que no se va o cualquier duda de salud, ve a un profesional antes de seguir un plan.</p>
+<h2>Legal</h2>
+<ul><li><a href="privacidad.html">Política de privacidad</a></li><li><a href="condiciones.html">Condiciones de uso</a></li></ul>
+<p><strong>Responsable:</strong> Manuel Jiménez Carmona · NIF 70422792N · Tres Cantos, Madrid, España · <a href="mailto:manolojc02@gmail.com">manolojc02@gmail.com</a></p>
+
+<footer><p class="pie-doc">Ruki · Soporte</p><p class="pie-id"><strong>Manuel Jiménez Carmona</strong> · NIF 70422792N · Tres Cantos, Madrid, España<br>Contacto: <a href="mailto:manolojc02@gmail.com">manolojc02@gmail.com</a></p></footer>
+
+</main>
+</body>
+</html>
